@@ -1,0 +1,151 @@
+body {
+    background-image: url(../img/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+header {
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    margin-bottom: 30px;
+}
+
+#bannerflog img {
+    height: 100px;
+
+}
+
+h1{
+    color: green;
+}
+p {
+    color: #ccc;
+}
+h2{
+    color: green;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #D50404;
+}
+
+textarea,
+input {
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #D50404;
+    margin-bottom: 20px;
+}
+
+.posteo {
+    color: #D50404;
+}
+
+.posteo strong {
+    display: block;
+}
+
+.posteo hr {
+    border: 1px solid #D50404;
+}
+
+.corazon {
+    font-size: 40px;
+    color: gray;
+    text-align: center;
+}
+
+.rojo {
+    color: red;
+}
+
+footer {
+    padding: 10px;
+}
+
+.contact-form {
+    margin-top: 15px;
+}
+
+.contact-form .textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.form-control {
+    box-shadow: none;
+    border-color: #D50404;
+    height: 49px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #D50404;
+}
+
+.form-control-feedback {
+    line-height: 50px;
+}
+
+.main-btn {
+    background: #D50404;
+    border-color: #D50404;
+    color: #D50404;
+}
+
+.main-btn:hover {
+    background: #D50404;
+    color: #D50404;
+}
+
+.form-control-feedback {
+    line-height: 50px;
+    top: 0px;
+}
+
+
+#caja {
+    border-radius: 7px;
+    padding: 5%;
+    background-color: rgba(9, 188, 104, .6);
+}
+.respuesta{
+    border-radius: 7px;
+    padding: 2%;
+    background-color: rgba(9, 188, 104, .6);
+}
+.lista{
+    border-radius: 7px;
+    background-color: rgba(242, 209, 41, .6);
+    padding: 1px 15px;
+}
+.lista p{
+    color: #D50404;
+}
+
+
+#datos {
+    color: #D50404;
+    font-weight: 600;
+}
+
+#data {
+    color: #D50404;
+    font-weight: 600;
+}
+
+.btn-primary {
+    margin: 2%;
+}

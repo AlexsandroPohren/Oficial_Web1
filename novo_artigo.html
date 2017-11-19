@@ -1,54 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Artigo</title>
-  </head>
-  <body>
+<head>
+<meta charset="utf-8">
+<title>Novo Artigo</title>
 
-      <center><h1>Artigo</h1></center
+<body style= background-color:#ccc;>
+<link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
 
-        <label for="inp-img"><b>Imagem:</b></label>
-        <input id="inp-img" type="file">
-        <br />
-        <br />
+<body>
+<style>
 
-        <label for="inp-text"> <b>Nome:</b></label>*
-        <input id="inp-text" type=text"" placeholder="Digite o Nome do Artigo" required>
-        <br />
-        <br />
+form {
+   /* Apenas para centralizar o form na página */
+   margin: 0 auto;
+   width: 500px;
+   /* Para ver as bordas do formulário */
+   padding: 1em;
+   border: 5px solid #CCC;
+   border-radius: 1em;
+}
+form div + div {
+   margin-top: 1em;
+}
+label {
+   /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+   display: inline-block;
+   width: 120px;
+   text-align: right;
+}
 
-        <label for="inp-date"><b>Data de criação:</b></label>*
-        <input id="inp-date" type="date" placeholder="Informe sua Data de Criação do Artigo" required>
-        <br />
-        <br />
+input, textarea {
+   /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+   font: 1em sans-serif;
 
-        <label ><b>Artigo:</b></label>
-        <textarea maxlength="500" placeholder="Digite seu Artigo !!!"></textarea>
-        <br />
-        <br />
+   /* Para dar o mesmo tamanho a todos os campo de texto */
+   width: 300px;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
 
-        * Campos com Preenchimento Obrigatório !!!
+   /* Para harmonizar o look & feel das bordas nos campos de texto*/
+   border: 1px solid #999;
+}
+input:focus, textarea:focus {
+   /* Dar um pouco de destaque nos elementos ativos */
+   border-color: #000;
+}
 
-        <center>
-          <input  type="button" value="Salvar"</a>
-          <input  type="button" value="Editar"</a>
-        </center>
+textarea {
+   /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+   vertical-align: top;
 
-        <ul>
-           <h3>Artigos Publicados:</h3>
-              <br />
-                  <li><a href="artigo1.html"> Futebol</a></li>
-                  <li><a href="artigo2.html"> Natação</a></li>
-                </ul>
+   /* Para dar espaço suficiente para digitar algum texto */
+   height: 5em;
 
-       </aside>
+   /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+   resize: vertical;
+}
+.button {
+   /* Para posicionar os botões para a mesma posição dos campos de texto */
+   padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+   /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+   margin-left: 15em;
+}
+</style>
 
-    <h3>Visite nossas Páginas:</h3>
-       <br />
-           <li><a href="index.html"> Volte a página principal</a></li>
-           <li><a href="perfil.html"> Cadastre seu Perfil</a></li>
-         </ul>
+ <header>
+
+
+
+ 	</header>
+
+  <h3><center> Criar Artigo: </center></h3>
+
+  <form action="index.html" method="post">
+
+   <div>
+       <label for="Foto">Foto Postagem:</label>
+        <label action="envia_foto.php" method="post" enctype="multipart/form-data">
+         <input type="file" name="Arquivo" id="Arquivo"><br>
+
+   </div>
+
+     <div>
+         <label for="name">Título:<i style="color: red">*</i> </label>
+         <input type="text" id="name" maxlength="40" pattern="[a-zA-Z\s]+$" required />
+     </div>
+
+
+           <div>
+               <label for="msg">Texto:</label>
+               <textarea id="msg"></textarea>
+           </div>
+
+           <div>
+               <label for="Data" >Data Artigo:</label>
+               <input type="date" id="Data" required />
+           </div>
+
+  <div>
+     <button type="reset" > Limpar </button>
+  </div>
+
+  <div>
+     <button type="submit"> Publicar </button>
+  </div>
+  </form>
+
+  <ul>
+    <h3>Artigos Publicados:</h3>
+      <br />
+         <li><a href="artigo1.html"> Futebol</a></li>
+         <li><a href="artigo2.html"> Natação</a></li>
+  </ul>
+
+<ul>
+   <h3>Visite nossas Páginas:</h3>
+      <br />
+          <li><a href="index.html"> Volte a página principal</a></li>
+          <li><a href="perfil.html"> Cadastre seu Perfil</a></li>
+</ul>
+
 
   </body>
-</html>
+
+  </html>
